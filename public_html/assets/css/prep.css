@@ -1,0 +1,89 @@
+/*body {  
+    font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
+    color:#fff;
+    padding: 50px;
+    width: 300px;
+    margin: 0 auto;
+  background-color: #374954;
+  
+} */
+/*.dropdown {
+    width: 300px;
+}*/
+a {
+    color:#fff;
+}
+.dropdown dd, .dropdown dt {
+    margin:0px;
+    padding:0px;
+    width: 0px;
+}
+.dropdown ul {
+    margin: -1px 0 0 0;
+}
+.dropdown dd {
+    position:static;
+}
+.dropdown a, 
+.dropdown a:visited {
+    color:#000;
+    text-decoration:none;
+    outline:none;
+    /*font-size: 12px;*/
+}
+.dropdown dt a {
+    background-color:#fff;
+    display:block;
+    padding: 5px 0px 0px 4px;
+    min-height: 25px;
+    line-height: 24px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #C7C7C7;
+    border-width: 1px;
+    width:220px;
+}
+.dropdown dt a span, .multiSel span {
+    cursor:pointer;
+    display:inline-block;
+    padding: 0 1px 1px 0;
+}
+.dropdown dd ul {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #C7C7C7;
+    border-width: 1px;
+    color:#000;
+    display:none;
+    left:0px;
+    padding: 2px 1px 5px 4px;
+    position:static;
+    top:2px;
+    width:219px;
+    list-style:none;
+    height: 120px;
+    overflow: auto;
+}
+.dropdown span.value {
+    display:none;
+}/*
+*/.dropdown dd ul li a {
+    padding:5px;
+    display:block;
+}
+li:last-child {
+    display: none;
+}/*
+.dropdown dd ul li a:hover {
+    background-color:#fff;
+}
+button {
+  background-color: #6BBE92;
+  width: 302px;
+  border: 0;
+  padding: 10px 0;
+  margin: 5px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}*/

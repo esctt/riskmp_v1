@@ -1,0 +1,93 @@
+<div class="modal-content"><div class="modal-content"><div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title">New Patient</h4>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row form-group">
+                    <label class="col-md-4 control-label">First Name: </label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="First_Name" maxlength="50">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row form-group">
+                    <label class="col-md-4 control-label">Last Name: </label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" name="Last_Name" maxlength="50">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row form-group">
+                    <label class="col-md-4 control-label">Phone Number: </label>
+                    <div class="col-md-8">
+                        <input type="tel" class="form-control" name="Phone" maxlength="50">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row form-group">
+                    <label class="col-md-4 control-label">Date of Birth: </label>
+                    <div class="col-md-8">
+                        <div class="input-group date date-picker margin-bottom-5" data-date-format="yyyy-mm-dd">
+                            <input type="text" class="form-control form-filter input-sm" readonly="" name="BirthDate">
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm default" type="button"><i class="fa fa-calendar"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="modal-footer">
+        <button type="button" class="btn default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn blue" id="submit_add_med">Save changes</button>
+    </div></div>
+
+<script>
+    $('.date-picker').datepicker({
+            rtl: App.isRTL(),
+            autoclose: true
+        });
+    var form_submitted = false;
+    $('#submit_add_patient').click(function(event) {
+        event.preventDefault();
+        if (form_submitted) {
+            return;
+        }
+        form_submitted = true;
+        var url = config.base_url + "data_fetch/new_patient';
+        var posting = $.post(url, {
+            First_Name: $('#new_patient_modal input[name="First_Name"]').val(),
+            Last_Name: $('#new_patient_modal input[name="Last_Name"]').val(),
+            Phone: $('#new_patient_modal input[name="Phone"]').val(),
+            BirthDate: $('#new_patient_modal input[name="BirthDate"]').val()
+        });
+        posting.done(function(data) {
+            var result = JSON.parse(data);
+            if (result['success']) {
+                MedsTableObj.getDataTable()._fnAjaxUpdate();
+                BootstrapDialog.alert('Medication was successfully added.', function() {
+                    $('#add_med_modal').modal('hide')
+                });
+                form_submitted = false;
+            } else {
+                BootstrapDialog.alert(result['message']);
+            }
+        });
+        posting.fail(function()
+        {
+            BootstrapDialog.alert('An unknown error occurred. Please try again.');
+        });
+        form_submitted = false;
+    });
+</script></div></div>

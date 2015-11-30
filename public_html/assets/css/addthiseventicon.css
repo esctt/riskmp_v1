@@ -1,0 +1,113 @@
+.addthisevent-drop
+{
+	background: url(icon-calendar.png) no-repeat;
+	color: #333;
+	display: inline-block;
+	font-family: arial;
+	font-size: 14px;
+	height: 23px;
+	position: relative;
+	text-decoration: none;
+	width: 27px;
+	z-index: 999998;
+}
+.addthisevent-drop:hover
+{
+	color: #555;
+	font-size: 14px;
+	text-decoration: none;
+}
+.addthisevent-selected
+{
+}
+.addthisevent_dropdown
+{
+	background: #fff;
+	border-bottom: 1px solid #a8a8a8;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #bebebe;
+	border-top: 1px solid #c8c8c8;
+	box-shadow: 1px 3px 6px rgba(0,0,0,0.15);
+	display: none;
+	margin-left: -1px;
+	margin-top: 4px;
+	moz-border-radius: 2px;
+	moz-box-shadow: 1px 3px 6px rgba(0,0,0,0.15);
+	padding: 6px 0px 0px 0px;
+	position: absolute;
+	text-align: left;
+	webkit-border-radius: 2px;
+	webkit-box-shadow: 1px 3px 6px rgba(0,0,0,0.15);
+	width: 200px;
+	z-index: 99999;
+}
+.addthisevent_dropdown span
+{
+	background: #fff;
+	color: #6d84b4;
+	display: block;
+	font-size: 12px;
+	line-height: 110%;
+	padding: 8px 10px 9px 15px;
+	text-decoration: none;
+	width: 175px;
+}
+.addthisevent_dropdown span:hover
+{
+	background: #f4f4f4;
+	color: #6d84b4;
+	font-size: 12px;
+	text-decoration: none;
+}
+.addthisevent span
+{
+	display: none!important;
+}
+.addthisevent-drop ._url,.addthisevent-drop ._start,.addthisevent-drop ._end,.addthisevent-drop ._summary,.addthisevent-drop ._description,.addthisevent-drop ._location,.addthisevent-drop ._organizer,.addthisevent-drop ._organizer_email,.addthisevent-drop ._facebook_event,.addthisevent-drop ._all_day_event
+{
+	display: none!important;
+}
+.addthisevent_dropdown .copyx
+{
+	cursor: default;
+	display: block;
+	height: 21px;
+	position: relative;
+	width: 200px;
+}
+.addthisevent_dropdown .brx
+{
+	background: #e0e0e0;
+	height: 1px;
+	left: 10px;
+	overflow: hidden;
+	position: absolute;
+	top: 9px;
+	width: 180px;
+	z-index: 100;
+}
+.addthisevent_dropdown .frs
+{
+	background: #fff;
+	color: #cacaca;
+	cursor: pointer;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 110%;
+	padding-left: 10px;
+	position: absolute;
+	right: 10px;
+	text-align: right;
+	text-decoration: none;
+	top: 5px;
+	z-index: 101;
+}
+.addthisevent_dropdown .frs:hover
+{
+	color: #6d84b4;
+}
+.addthisevent
+{
+	visibility: hidden;
+}

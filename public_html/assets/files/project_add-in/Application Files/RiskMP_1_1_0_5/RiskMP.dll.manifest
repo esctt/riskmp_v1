@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="RiskMP.dll" version="1.1.0.5" publicKeyToken="c9129e7e9b85f09c" language="neutral" processorArchitecture="msil" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">RiskMP</description>
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Office.Tools.v4.0.Framework" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Numerics" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>CtnCtseaMyfROIGe0ENdGO6arHg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="456192">
+      <assemblyIdentity name="Newtonsoft.Json" version="4.5.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>jFKgouWBUSf5DIULnmf4GXXM0n0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RiskMP.dll" size="47104">
+      <assemblyIdentity name="RiskMP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>unRNnW0a4Bom8Y7YaRLTydWthH8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
+    <vstav3:entryPointsCollection>
+      <vstav3:entryPoints>
+        <vstav3:entryPoint class="RiskMP.ThisAddIn">
+          <assemblyIdentity name="RiskMP" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+        </vstav3:entryPoint>
+      </vstav3:entryPoints>
+    </vstav3:entryPointsCollection>
+    <vstav3:update enabled="true">
+      <vstav3:expiration maximumAge="7" unit="days" />
+    </vstav3:update>
+    <vstav3:application>
+      <vstov4:customizations xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
+        <vstov4:customization>
+          <vstov4:appAddIn application="Project" loadBehavior="3" keyName="RiskMP">
+            <vstov4:friendlyName>RiskMP</vstov4:friendlyName>
+            <vstov4:description>RiskMP</vstov4:description>
+            <vstov4.1:ribbonTypes xmlns:vstov4.1="urn:schemas-microsoft-com:vsto.v4.1">
+              <vstov4.1:ribbonType name="RiskMP.Ribbon_RiskMP, RiskMP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            </vstov4.1:ribbonTypes>
+          </vstov4:appAddIn>
+        </vstov4:customization>
+      </vstov4:customizations>
+    </vstav3:application>
+  </vstav3:addIn>
+<publisherIdentity name="CN=ESCTT Inc., O=ESCTT Inc., L=Newmarket, S=Ontario, C=CA" issuerKeyHash="254581685026383d3b2d2cbecd6ad9b63db36663" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>C7yF1hwM82ayre+2G9wCzq2yYyIHud3Awj+wIKDLnHM=</DigestValue></Reference></SignedInfo><SignatureValue>CfklLhEG5a7nyWHWvjPpdkaGa7XtKsFCZxmoYULaE5ju2OJjSGVgV/8PHsHZhTymMzo7n7Cr/YY3cUCvN/ZwWxN/T8pEvQnh74s0G1lDVa9k/qsmFXyHJsoY48p2LUjFP0uDgGZOXG/XFwrLnmD/VV5s7Dij1MD7jUNTku3EOhjbrJXjw2EMwKDOa2p7nq4dNOrqZph9CLl6lgc3SFrSGFqLbiQ6/D+cHFlylBz17kNtbMrEVmwnXuC1T9GvOXNPEQBwFthnNRpKZQhJxvwfhgG51TlgNEaaJdHuGrXfU9T9bgxvdz0GHatHgaPITuXnDc70VvbFzjHNn1WSgzCC+Q==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1RYuLhIKZi214FxUm7UWlo4OFPdWq9DrRmJCqRpK+pc/NnUgxCOdaL9RAVWYsqdP+ea9fB2nuO5TYkOx5/e0DHvC/RtPiQs/YwxWl9HtuWSjzKgszkWWNCbOaLlaUo/zuCk3BBaVcEAzpQPj9Tciu4120wZJT3kbLYxrt8AHDcC6+RQ2actcLFCLB7KdCRopOCI6ARiifQRNPEQoiNgzjVUSUFkoTW+p2VkUmha6mCy1zT88o9/9Bld7NouM/nRVqjHDHb85C1MQVAKfEUD1YQL9hVkCBqtBiRw16AQX7wwWjomjSBYmPzZmCwJ4aNsoQClncXAQPEE6lsTv2MFiOQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="739ccba020b03fc2c0ddb9072263b2adce02dc1bb6efadb266f30c1cd685bc0b" Description="" Url=""><as:assemblyIdentity name="RiskMP.dll" version="1.1.0.5" publicKeyToken="c9129e7e9b85f09c" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ESCTT Inc., O=ESCTT Inc., L=Newmarket, S=Ontario, C=CA</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>JXYLc3PJieg1NBIx3BVG2mLFCXw5NBgF5yu3djHNT0s=</DigestValue></Reference></SignedInfo><SignatureValue>gWdED+/sg2LAs8O7Owv1+sJIMxJdVCkg8Li1u/KDnFua2J1n/FZn6gR4JXY5L4D1Ko9HWD15Qvm1W4tz/uZrN0BMrlxNgsLURZsZt6O1tvDSF8AwWsSLGuEhPJryNx3SrZHdazwsDF4uVQZCVru9LaFgejYsEgk7O8VXW6oODMcBikuw/XDJ08uBCrZJ6qrL+0o4q/3mZIOsIFpBhZR+QiaIumwhyFQ6eBape+IDJXv7EqXW8cUM0EBO339BrKb+qkuRlTSdocFhvNTh1WMdac9kmmnlp+izdyERQPCHZZ3GxdEiX5R1bdnOCW0Jb4iHF0hVIZsah9EINTOIiS+plg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1RYuLhIKZi214FxUm7UWlo4OFPdWq9DrRmJCqRpK+pc/NnUgxCOdaL9RAVWYsqdP+ea9fB2nuO5TYkOx5/e0DHvC/RtPiQs/YwxWl9HtuWSjzKgszkWWNCbOaLlaUo/zuCk3BBaVcEAzpQPj9Tciu4120wZJT3kbLYxrt8AHDcC6+RQ2actcLFCLB7KdCRopOCI6ARiifQRNPEQoiNgzjVUSUFkoTW+p2VkUmha6mCy1zT88o9/9Bld7NouM/nRVqjHDHb85C1MQVAKfEUD1YQL9hVkCBqtBiRw16AQX7wwWjomjSBYmPzZmCwJ4aNsoQClncXAQPEE6lsTv2MFiOQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFPjCCBCagAwIBAgIHBBTtmwI0/jANBgkqhkiG9w0BAQsFADCBxjELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNjb3R0c2RhbGUxJTAjBgNVBAoTHFN0YXJmaWVsZCBUZWNobm9sb2dpZXMsIEluYy4xMzAxBgNVBAsTKmh0dHA6Ly9jZXJ0cy5zdGFyZmllbGR0ZWNoLmNvbS9yZXBvc2l0b3J5LzE0MDIGA1UEAxMrU3RhcmZpZWxkIFNlY3VyZSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkgLSBHMjAeFw0xNDAzMjAxOTE3NTBaFw0xNTAzMjAxOTE3NTBaMF0xCzAJBgNVBAYTAkNBMRAwDgYDVQQIEwdPbnRhcmlvMRIwEAYDVQQHEwlOZXdtYXJrZXQxEzARBgNVBAoTCkVTQ1RUIEluYy4xEzARBgNVBAMTCkVTQ1RUIEluYy4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVFi4uEgpmLbXgXFSbtRaWjg4U91ar0OtGYkKpGkr6lz82dSDEI51ov1EBVZiyp0/55r18Hae47lNiQ7Hn97QMe8L9G0+JCz9jDFaX0e25ZKPMqCzORZY0Js5ouVpSj/O4KTcEFpVwQDOlA+P1NyK7jXbTBklPeRstjGu3wAcNwLr5FDZpy1wsUIsHsp0JGik4IjoBGKJ9BE08RCiI2DONVRJQWShNb6nZWRSaFrqYLLXNPzyj3/0GV3s2i4z+dFWqMcMdvzkLUxBUAp8RQPVhAv2FWQIGq0GJHDXoBBfvDBaOiaNIFiY/NmYLAnho2yhAKWdxcBA8QTqWxO/YwWI5AgMBAAGjggGXMIIBkzAPBgNVHRMBAf8EBTADAQEAMBMGA1UdJQQMMAoGCCsGAQUFBwMDMA4GA1UdDwEB/wQEAwIHgDA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vY3JsLnN0YXJmaWVsZHRlY2guY29tL3NmaWcyczUtMC5jcmwwWQYDVR0gBFIwUDBOBgtghkgBhv1uAQcXAjA/MD0GCCsGAQUFBwIBFjFodHRwOi8vY2VydGlmaWNhdGVzLnN0YXJmaWVsZHRlY2guY29tL3JlcG9zaXRvcnkvMIGCBggrBgEFBQcBAQR2MHQwKgYIKwYBBQUHMAGGHmh0dHA6Ly9vY3NwLnN0YXJmaWVsZHRlY2guY29tLzBGBggrBgEFBQcwAoY6aHR0cDovL2NlcnRpZmljYXRlcy5zdGFyZmllbGR0ZWNoLmNvbS9yZXBvc2l0b3J5L3NmaWcyLmNydDAfBgNVHSMEGDAWgBQlRYFoUCY4PTstLL7Natm2PbNmYzAdBgNVHQ4EFgQU+m5t3kztDzE3xTWaUNO1Wq8GYeswDQYJKoZIhvcNAQELBQADggEBANhQ1QP8gG3rfExAb+0fDve6awCxcbHkUuWyC/bCZUTM4Vg74KRhHuaCPRsiI8X3XGz1sS3bnWM37d6RcsmaUNfReJA3dftDCZCDEOjHzUK1VwKCiDCU2iGrjlHe7NFMIaWaifvXZ4VuFJupRUZttfcDID6xIj1LchlxwmpZcItxJeBRFYC1NjFwrTy35rE7pvKoLgQtMoArX31gmFxU8gOZw9FeqkupUJ68IfiRdu6O5DC4vdp6rJ2GqCguhMhQrWT+8gbg0L38o6XQ9kSrWt898BzaLTjLl8Q3y7ic3vTy+U7O8bOobEQF07QUL8cUV7wIW0U8h4AMqHGV8FFnchY=</X509Certificate><X509Certificate>MIIFADCCA+igAwIBAgIBBzANBgkqhkiG9w0BAQsFADCBjzELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNjb3R0c2RhbGUxJTAjBgNVBAoTHFN0YXJmaWVsZCBUZWNobm9sb2dpZXMsIEluYy4xMjAwBgNVBAMTKVN0YXJmaWVsZCBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eSAtIEcyMB4XDTExMDUwMzA3MDAwMFoXDTMxMDUwMzA3MDAwMFowgcYxCzAJBgNVBAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMSUwIwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTMwMQYDVQQLEypodHRwOi8vY2VydHMuc3RhcmZpZWxkdGVjaC5jb20vcmVwb3NpdG9yeS8xNDAyBgNVBAMTK1N0YXJmaWVsZCBTZWN1cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDlkGZL7PlGcakgg77pbL9KyUhpgXVObST2yxcT+LBxWYR6ayuFpDS1FuXLzOlBcCykLtb6Mn3hqN6UEKwxwcDYav9ZJ6t21vwLdGu4p64/xFT0tDFE3ZNWjKRMXpuJyySDm+JXfbfYEh/JhW300YDxUJuHrtQLEAX7J7oobRfpDtZNuTlVBv8KJAV+L8YdcmzUiymMV33a2etmGtNPp99/UsQwxaXJDgLFU793OGgGJMNmyDd+MB5FcSM1/5DYKp2N57CSTTx/KgqT3M0WRmX3YISLdkuRJ3MUkuDq7o8W6o0OPnYXv32JgIBEQ+ct4EMJddo26K3biTr1XRKOIwSDAgMBAAGjggEsMIIBKDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQUJUWBaFAmOD07LSy+zWrZtj2zZmMwHwYDVR0jBBgwFoAUfAwyH6fZMH/EfWijYqihzqsHWycwOgYIKwYBBQUHAQEELjAsMCoGCCsGAQUFBzABhh5odHRwOi8vb2NzcC5zdGFyZmllbGR0ZWNoLmNvbS8wOwYDVR0fBDQwMjAwoC6gLIYqaHR0cDovL2NybC5zdGFyZmllbGR0ZWNoLmNvbS9zZnJvb3QtZzIuY3JsMEwGA1UdIARFMEMwQQYEVR0gADA5MDcGCCsGAQUFBwIBFitodHRwczovL2NlcnRzLnN0YXJmaWVsZHRlY2guY29tL3JlcG9zaXRvcnkvMA0GCSqGSIb3DQEBCwUAA4IBAQBWZcr+8z8KqJOLGMfeQ2kTNCC+Tl94qGuc22pNQdvBE+zcMQAiXvcAngzgNGU0+bE6TkjIEoGIXFs+CFN69xpk37hQYcxTUUApS8L0rjpf5MqtJsxOYUPl/VemN3DOQyuwlMOS6eFfqhBJt2nk4NAfZKQrzR9voPiEJBjOeT2pkb9UGBOJmVQRDVXFJgt5T1ocbvlj2xSApAer+rKluYjdkf5lO6Sjeb6JTeHQsPTIFwwKlhR8Cbds4cLYVdQYoKpBaXAko7nv6VrcPuuUSvC33l8Odvr7+2kDRUBQ7nIMpBKGgc0T0U7EPMpODdIm8QC3tKai4W56gf0wrHofx1l7</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

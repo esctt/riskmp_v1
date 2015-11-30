@@ -1,0 +1,65 @@
+/* 
+    Document   : report
+    Created on : 20-Jan-2014, 8:57:00 AM
+    Author     : ESCTT
+    Description:
+        Defines styling for reports
+*/
+
+root { 
+    display: block;
+}
+
+body{
+  -webkit-print-color-adjust:exact;
+  font-family: Arial;
+}
+
+.report-title {
+    width: 100%;
+    padding: 1px 20px 1px 20px;
+    background: #FFFFFF;
+    color: #4C4C4C;
+    border-bottom: 4px #336699 solid;
+    border-top: 4px #336699 solid;
+    margin-bottom: 5px;
+}
+
+a, a:active, a:visited, a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+
+.info {
+    margin-bottom: 10px;
+    padding: 0 5px 0 5px;
+}
+
+.info .title {
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-size:0.9em;
+    line-height:1.4em;
+    display:inline;
+    font-weight:bold;
+    color:#222;
+}
+
+.info .value {
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-size:0.9em;
+    line-height:1.4em;
+    display:inline;
+    color:#222;
+}
+
+.info .spacer {
+    width:2%;
+    float:left;
+    height:1px;
+}
+
+.info .bottom {
+    width:100%;
+    clear:both;
+    height:10px;
+}
